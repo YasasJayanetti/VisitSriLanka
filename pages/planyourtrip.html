@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+		<link rel="stylesheet" href="../css/styles.css">
+		<link rel="stylesheet" href="../css/stylesPlaces.css">
+
+		
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+		crossorigin="anonymous"
+		/>
+		<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+		integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+		crossorigin="anonymous"
+		/>
+		</script>
+		
+		
+		<title>Plan your trip</title>
+	</head>
+	
+	<body>
+		<!-- header section -->
+		<div class="header">
+		  <div class="text">Visit Sri Lanka</div>
+		  <div class="subtext">
+		  <h2><span>A </span><span>land </span><span>like </span><span>no </span><span>other </span></div></h2>
+		</div>
+		
+		<!-- navigation bar -->
+		<div class="topnav">
+		  <a class="home" href="../index.html"><i class="material-icons">home</i>  Home	</a>
+		  
+			<div class="dropdown">
+			<a class="dropdown-btn"><i class="material-icons">tour</i>  Places to visit</a>
+			<div class="dropdown-content">
+			  <a href="historical.html"><i class="material-icons">fort</i>  Historical</a>
+			  <a href="beaches.html"><i class="material-icons">waves</i>  Beaches</a>
+			  <a href="countryside.html"><i class="material-icons">cottage</i>  Countryside</a>
+			</div>
+			</div>
+			
+			<div class="dropdown">
+			<a class="dropdown-btn"><i class="material-icons">hiking</i>  Things to do</a>
+			<div class="dropdown-content">
+			  <a href="surfing.html"><i class="material-icons">kitesurfing</i>  Surfing</a>
+			  <a href="diving.html"><i class="material-icons">scuba_diving</i> Diving</a>
+			  <a href="safari.html"><i class="material-icons">pets</i>  Safari</a>
+			</div>
+			</div>
+		  
+		  <a href="planyourtrip.html"><i class="material-icons">draw</i>  Plan your trip</a>
+		  
+		  <a href="map.html"><i class="material-icons">map</i>  Map</a>
+		</div>
+		
+		<br />
+		
+		<!-- Content section -->
+		<div class="planmain">
+			<div class="planbanner">
+				<div class="planbanner-text">
+					<h1>Plan your trip</h1>
+				</div>
+			</div>
+			
+			<!-- Form -->
+			<div class="plantripform">
+			<form> 
+			
+			<fieldset>
+					<legend>Search the best flight deals</legend>
+					
+				<label for="country">Select your country <i class="material-icons">flight_takeoff</i></label>
+					<select id="country" name="country">
+					<option value="Japan">Japan</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+			</select>
+			
+			<label for="dep">Departure date <i class="material-icons">calendar_month</i></label>
+					<input type="text" id="dep" name="dep" placeholder="Select departure date">
+			
+			<label for="country">Select your destination <i class="material-icons">flight_land</i></label>
+					<select id="country" name="country">
+					<option value="SriLanka">Sri Lanka</option>
+					<option value="Vietnam">Vietnam</option>
+					<option value="Nepal">Nepal</option>
+			</select>
+			
+			<label for="arr">Arrival date <i class="material-icons">calendar_month</i></label>
+					<input type="text" id="arv" name="dep" placeholder="Select arrival date">
+			
+			<input type="submit_flight" value="Search">
+			
+			
+					<legend>Search the best accomadation places</legend>
+					
+					<label for="cin">Check-in date <i class="material-icons">calendar_month</i></label>
+					<input type="text" id="chkin" name="chkin" placeholder="Select check-in date">
+					
+					<label for="cout">Check-out date <i class="material-icons">calendar_month</i></label>
+					<input type="text" id="chkout" name="chkout" placeholder="Select check-out date">
+					
+					<label for="hotel">Select your hotel <i class="material-icons">hotel</i></label>
+					<select id="hotel" name="hotel">
+					<option value="Cinnamongrand">Cinnamon grand</option>
+					<option value="TajSamudra">Taj Samudra</option>
+					<option value="Hilton">Hilton</option>
+					</select>
+					
+					<label for="adult">No. of adult</label>
+					<select id="adult" name="adult">
+					<option value="adult1">1</option>
+					<option value="adult2">2</option>
+					</select>
+					
+					<label for="child">No. of childrens</label>
+					<select id="child" name="child">
+					<option value="child1">1</option>
+					<option value="child2">2</option>
+					<option value="child3">3</option>
+					</select>
+				
+				<input type="submit_hotel" value="Search"> 	
+				
+				<div class="contact-us">
+				<form>
+					<fieldset>
+						<legend>Contact us</legend>
+						<p>First name<br/>
+						<input type="text" placeholder="First name" name="fname" required></p>
+						<p>Last name<br/>
+						<input type="text" placeholder="Last name" name="lname" required></p>
+						<p>Email address<br/>
+						<input type="email" placeholder="Enter your email" name="email-address"></p>
+						
+						<p>Please select what kind of places would you like to visit:<br/>
+						<input type="checkbox" name="place1" value="historical" checked/> Historical</br>
+						<input type="checkbox" name="place2" value="beaches" /> Beaches</br>
+						<input type="checkbox" name="place3" value="countryside"  /> Countryside</br>
+						</p>
+						
+						<p>Please select what kind of activities would you like to do:<br/>
+						<input type="checkbox" name="act1" value="surfing" checked/> Surfing</br>
+						<input type="checkbox" name="act2" value="diving" /> Diving</br>
+						<input type="checkbox" name="act3" value="safari"  /> Safari</br>
+						</p>
+						
+						<p>Please select your planned arrival date: <br/>
+						<i class="material-icons">calendar_month</i><input type="text" placeholder="Arrival date" name="arrdate" required></p> 
+						
+						<p>Enter your message:<br/>
+						<textarea name="comments" cols="50" rows="8" placeholder="Enter your message here." maxlength="500"></textarea></p>
+						
+						<input type="submit_contact" value="Submit"> 	
+						<br />
+						<input type="reset" />
+						
+					</fieldset>
+				</form>
+				</div>
+			
+			</fieldset>
+			</form>
+			</div>
+		
+		</div>
+		
+		
+		<br />
+		<!-- footer Section -->
+        <footer>
+		<div class="content">
+		  <div class="top">
+			<div class="logo-details">
+			  <span class="logo_name">Visit Sri Lanka</span>
+			</div>
+			<div class="media-icons">
+			  <a href="#"><i class="fab fa-facebook-f"></i></a>
+			  <a href="#"><i class="fab fa-twitter"></i></a>
+			  <a href="#"><i class="fab fa-instagram"></i></a>
+			  <a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		  </div>
+		  <div class="link-boxes">
+			<ul class="box">
+			  <li class="link_name">Site map</li>
+			  <li><a href="#">Home</a></li>
+			  <li><a href="#">Places to visit</a></li>
+			  <li><a href="#">Things to do</a></li>
+			  <li><a href="#">Plan your trip</a></li>
+			  <li><a href="#">Map</a></li>
+			</ul>
+			<ul class="box">
+			  <li class="link_name">Our team</li>
+			  <li><a href="#">M22W7456 - Yasas Jayanetti</a></li>
+			  <li><a href="#">M22W7453 - Madhusha Wijerathna</a></li>
+			  <li><a href="#">M22W7508 - Ganushika Thamali</a></li>
+			  <li><a href="#">M22W7502 - Shalika Fernando</a></li>
+			</ul>
+			
+		  </div>
+		</div>
+		<div class="bottom-details">
+		  <div class="bottom_text">
+			<span class="copyright_text">Copyright © 2023 <a href="#">VisitSriLanka</a> All rights reserved</span>
+		  </div>
+		</div>
+		
+		</footer>
+	
+		
+		
+		 
+	</body>
+</html>
